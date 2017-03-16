@@ -27,7 +27,6 @@
             </option>
           </KotlinCompilerInfo>
         </option>
-        <option name="useProjectSettings" value="false" />
         <option name="versionInfo">
           <KotlinVersionInfo>
             <option name="apiLevel" value="1.0" />
@@ -47,8 +46,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="dx" level="project" />
     <orderEntry type="library" exported="" name="KotlinJavaRuntime" level="project" />
-    <orderEntry type="library" name="dx" level="project" />
-    <orderEntry type="module-library">
+    <orderEntry type="library" exported="" name="dx" level="project" />
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
