@@ -1,6 +1,6 @@
 # classyshark-calculate-size
 
-The right way to calculate the size any library takes takes inside classes.dex entry is to build classes.dex entry 
+For some probems we need to calculate the size of third party inside APK's classes.dex. The right way to calculate the size any library takes takes inside classes.dex entry is to build classes.dex entry 
 having only that library inside. The resulted classes.dex should give us an upper bound
 
 ## Steps
