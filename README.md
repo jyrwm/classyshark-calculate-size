@@ -10,9 +10,11 @@ As an example, we will calculate how much physical space a retrofit library will
 
 2. Open ClassyShark Size Calculator
 
+`java -jar classyshark-calculate-size.jar`
+
 ![alt text](https://github.com/borisf/classyshark-calculate-size/blob/master/img/SelectJar.png)
 
-Double click on the ClassyShark Size Calculator jar. ClassyShark Calculator support 2 binary formats, class and jar. You can open with ClassyShark Calcualtor either an individual file or an folder with files.
+ClassyShark Calculator supports 2 binary formats, class and jar. You can open with ClassyShark Calcualtor either an individual file or an folder with files.
 Once you click the Open button ClassyShark will build classes.dex file from the provided jar.
 
 3. Inspect the result classes.dex with ClassyShark desktop client
