@@ -1,17 +1,15 @@
 @file:JvmName("FileUtils")
 
-import java.io.File
 import com.android.dx.command.Main
+import java.io.File
 
-private fun String.isJar() = this.endsWith("jar")
-private fun File.isJar() = this.name.isJar()
+private fun String.isSupportedBinaryFormat() = (this.endsWith("jar") || this.endsWith("class"))
+private fun File.isFileSupported() = this.name.isSupportedBinaryFormat()
 
-private fun File.compileDexFromJar() {
-    if (!isJar()) {
-        throw IllegalArgumentException("File should be a JAR!")
+private fun File.compileDex() {
+    if (isFileSupported()) {
+        Main.main(arrayOf("--dex", "--no-strict", "--output=${this.name}classes.dex", this.absolutePath))
     }
-
-    Main.main(arrayOf("--dex", "--output=${this.name}classes.dex", this.absolutePath))
 }
 
 private fun File.findJarsInFolder() {
@@ -22,7 +20,7 @@ fun File.buildFrom() {
     if (isDirectory) {
         findJarsInFolder()
     } else {
-        compileDexFromJar()
+        compileDex()
     }
 }
 

@@ -10,8 +10,8 @@ public class Runner {
         JFileChooser fc = new JFileChooser("ClassyShark Size Calculator");
         fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 
-        FileFilter filter = new FileNameExtensionFilter("JAR file",
-                new String[] {"jar", "jar"});
+        FileFilter filter = new FileNameExtensionFilter("jars or classes",
+                new String[] {"jar", "class"});
         fc.setFileFilter(filter);
         fc.addChoosableFileFilter(filter);
 
