@@ -6,7 +6,7 @@ having only that library inside. The resulted classes.dex should give us an uppe
 ## Steps
 As an example, we will calculate how much physical space a retrofit library will occupy inside classes.dex entry. 
 
-1. [Download](https://github.com/borisf/classyshark-calculate-size) ClassyShark Size Calculator
+1. [Download](https://github.com/borisf/classyshark-calculate-size/releases) ClassyShark Size Calculator
 
 2. Open ClassyShark Size Calculator
 
